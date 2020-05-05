@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(167deg, rgba(255,255,255,1) 0%, rgba(219,255,253,1) 48%, rgba(255,164,174,1) 100%);
+    font-family: 'Exo', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#controls {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#controls > button {
+    width: 10%;
+}
+
+#temperature-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    width: 100%;
+    border-color: white;
+}
+
+.sequencer-button {
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(219,255,253,1) 30%, rgba(255,164,174,1) 100%);
+}
+
+#sequencerContainer {
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+}
+
+.sequencer-button.active {
+    background: rgba(255,164,174, 0.5)
+}
+
+.sequencer-button.playing {
+     background: rgba(255,164,174,1)
+}

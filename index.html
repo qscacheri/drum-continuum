@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="Tone.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@magenta/music@^1.0.0/es6/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@magenta/music@^1.0.0"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="sequencer.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title></title>
+  </head>
+  <body>
+    <h1>Drum Continuum</h1>
+    <div id="sequencerContainer"></div>
+    <hr />
+    <div id="controls">
+      <button id="playButton">play</button>
+      <div id='temperature-container'>
+        <label>Temperature</label>
+        <input type="range" id="temperatureSlider" min="0" max="1" step=".01" />
+      </div>
+
+      <button id="extendButton">Extend</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
