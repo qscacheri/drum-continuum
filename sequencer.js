@@ -43,7 +43,7 @@ class Sequencer {
                 }
             }
             this.currentBeat++;
-            this.currentBeat = this.currentBeat % 32
+            this.currentBeat = this.currentBeat % numBeats
         }, "16n", "1m");
 
     }

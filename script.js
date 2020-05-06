@@ -1,7 +1,5 @@
 const sequencer = new Sequencer('sequencerContainer')
-document.getElementById('playButton').addEventListener('click', (e) => {
-    console.log(e.target.innerHTML);
-    
+document.getElementById('playButton').addEventListener('click', (e) => {    
     if (e.target.innerHTML === 'play') {
         sequencer.play()
         e.target.innerHTML = 'stop'
@@ -10,7 +8,6 @@ document.getElementById('playButton').addEventListener('click', (e) => {
         sequencer.stop()
         e.target.innerHTML = 'play'
     }
-
 })
 
 document.getElementById('extendButton').addEventListener('click', () => {
@@ -20,7 +17,7 @@ document.getElementById('extendButton').addEventListener('click', () => {
 document.getElementById('temperatureSlider').addEventListener('change', (e) => {
     console.log(e.target.value);
 
-    sequencer.temperature = e.target.value;
+    sequencer.temperature = parseFloat(e.target.value);
 })
 
 
